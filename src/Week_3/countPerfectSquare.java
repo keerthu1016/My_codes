@@ -13,11 +13,11 @@ public class countPerfectSquare
                 if (n % i == 0)
                 {
                     sum = sum + i;
-                    if (n / i != 0)
+                    if (n / i != i)
                     {
                         sum = sum + (n / i);
-                        count=count+1;
                     }
+                    count=count+1;
                 }
             }
             System.out.println(count);
